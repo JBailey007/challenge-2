@@ -132,6 +132,19 @@ main h2 {
     gap:20px;
 }
 
+figcaption {
+    background-color: lightslategray;
+    padding: 10px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.caption {
+    font-weight: bold;
+    color: black;
+    font-size: 26px;
+}
+
 /* Grid Positions */
 .p0 {
     grid-area: p0;
