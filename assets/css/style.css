@@ -1,5 +1,5 @@
 *{
-    font-family:serif;
+    font-family:sans-serif;
 }
 
 /* Main Header and Nav */
@@ -20,8 +20,7 @@ header h1 {
     border-style: solid;
     border-color: #13293d;
     font-size: 40px;
-    padding: 0 10px 0;
-    line-height: normal;
+    padding: 0 50px 0;
 }
 
 header a{
@@ -35,12 +34,15 @@ nav{
     justify-content: space-between;
 }
 
-.nav a{
-    display: flex;
-    justify-content: center;
+.top-nav-items a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+
 }
 
-.nav {
+.top-nav-items {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -49,41 +51,59 @@ nav{
     
 }
 
-.nav li{
-    padding: 5px;
-    border-top: 32.5px;
+.top-nav-items li{
+    padding: 8px;
+    border-top: 32px;
     border-left: 0;
     border-right: 0;
-    border-bottom: 32.5px;
+    border-bottom: 32px;
     border-style: solid;
     border-color: #13293d;
 }
 
+/* Banner with colorful image background.  */
 .banner {
-    background-image: url(../images/Jeep\ IMG.jpg);
+    background-image: url(../images/wallpaperflare.com_wallpaper\ \(1\).jpg);
     background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    height: 500px;
+    height: 350px;
     position: relative;
+}
+
+.banner div{
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 350px;
+    padding-top: 240px;
+    padding-right: 100px;
+
 }
 
 .banner h2 {
     display:flex;
-    justify-content: left;
-    font-size: 35px;
-    padding-top: 75px;
-    padding-left: 50px;
-    padding-bottom: 0;
-    padding-right: 0;
-    color: white;
-
+    justify-content: right;
+    font-size: 30px;
+    color: black;
+    background-color: lightslategray;
+    height: 75px;
+    width: 250px;
+    border: 6px solid lightslategray;
 }
 
 /* Main content section */
 
-h2 {
-    font-size: 36px;
+main h2 {
+    font-size: 45px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.text{
+    font-size: 22px;
 }
 
 .container{
@@ -93,10 +113,12 @@ h2 {
     display: grid;
     grid-template-columns: 18% 74%;
     gap:2%;
+    position: relative;
 }
 .topics{
-    height: 100px;
+    height: 100%;
     width: 100%;
+    border-right: 5px solid lightslategray;
 }
 /* Portfolio Images Grid */
 .work-tabs {
@@ -139,5 +161,10 @@ figure {
 
 .work-tabs img{
     object-fit: cover;
+    width: 100%;
+}
+
+.contact {
+    height: 150px;
     width: 100%;
 }
