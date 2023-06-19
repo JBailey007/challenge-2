@@ -9,11 +9,18 @@ justify-content: space-between;
 padding: 1px;
 background: #13293d;
 color: white;
+height: 100px;
 }
 
 header h1 {
+    border-top:30px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 30px;
+    border-style: solid;
+    border-color: #13293d;
     font-size: 40px;
-    padding: 0 15px 0 5%;
+    padding: 0 10px 0;
     line-height: normal;
 }
 
@@ -38,31 +45,99 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding-left: 40%;
     
 }
 
 .nav li{
     padding: 5px;
-    border-top: 50px;
+    border-top: 32.5px;
     border-left: 0;
     border-right: 0;
-    border-bottom: 0;
+    border-bottom: 32.5px;
     border-style: solid;
     border-color: #13293d;
 }
 
 .banner {
-   height: 200px; 
-   width: 100%;
-   background-color: bisque;
+    background-image: url(../images/Jeep\ IMG.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    height: 500px;
+    position: relative;
+}
+
+.banner h2 {
+    display:flex;
+    justify-content: left;
+    font-size: 35px;
+    padding-top: 75px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    padding-right: 0;
+    color: white;
+
 }
 
 /* Main content section */
+
+h2 {
+    font-size: 36px;
+}
+
 .container{
-    height: 800px;
-    width: 100%;
+    width: 92%;
+    padding-bottom: 120px;
+    margin: 40px auto 0px auto;
+    display: grid;
+    grid-template-columns: 18% 74%;
+    gap:2%;
 }
 .topics{
     height: 100px;
+    width: 100%;
+}
+/* Portfolio Images Grid */
+.work-tabs {
+    width: 92%;
+    padding-bottom: 120px;
+    margin: 40px auto 0px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 420px 215px 215px;
+    grid-template-areas: "p0 p0" "p1 p2" "p3 p4";
+    gap:20px;
+}
+
+/* Grid Positions */
+.p0 {
+    grid-area: p0;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+.p3 {
+    grid-area: p3;
+}
+
+.p4 {
+    grid-area: p4;
+}
+
+figure {
+    width: 100%;
+    position: relative;
+    border: 5px solid black;
+}
+
+.work-tabs img{
+    object-fit: cover;
     width: 100%;
 }
