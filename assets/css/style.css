@@ -177,7 +177,55 @@ figure {
     width: 100%;
 }
 
+/* Footer section  */
 .contact {
     height: 150px;
     width: 100%;
+    display: flex;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
+    background: #13293d;
+    color: white;
+    height: 100px;
+}
+
+footer h2 {
+    border-top:30px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 30px;
+    border-style: solid;
+    border-color: #13293d;
+    font-size: 26px;
+    padding: 0 50px 0;
+}
+
+.bottom-nav-items {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.bottom-nav-items a{
+    font-size: 22px;
+    color: white;
+    font-family: sans-serif;
+
+}
+
+.bottom-nav-items li{
+    padding: 8px;
+    border-top: 32px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 32px;
+    border-style: solid;
+    border-color: #13293d;
+    position: relative;
 }
